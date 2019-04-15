@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 ## AAPT
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
