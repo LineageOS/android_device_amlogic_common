@@ -104,6 +104,7 @@
 /dev/ttyBT1               0660   bluetooth     bluetooth
 
 /dev/display              0660   root         graphics
+/dev/display2             0660   root         graphics
 
 # For USB Joysticks
 /dev/input/js*            0664   system       system
