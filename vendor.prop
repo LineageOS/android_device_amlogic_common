@@ -1,3 +1,6 @@
+## NRDP
+ro.vendor.nrdp.validation=ninja_7
+
 ## Platform
 ro.vendor.platform.is.tv=0
 
