@@ -33,8 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     config.disable_bluetooth=true
 else
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.autoconnectbt.btclass=50c \
