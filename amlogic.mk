@@ -86,7 +86,9 @@ PRODUCT_PACKAGES += \
     libz_stable.vendor
 
 ## fastbootd
-PRODUCT_PACKAGES += fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl.custom \
+    fastbootd
 
 ## File-system permissions
 PRODUCT_PACKAGES += \
