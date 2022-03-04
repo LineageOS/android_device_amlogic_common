@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.audio.service \
-    audio.hearing_aid.default \
     audio.r_submix.default \
     audio.usb.default
 
@@ -33,7 +32,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 else
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
-    audio.a2dp.default \
     audio.bluetooth.default
 
 PRODUCT_PROPERTY_OVERRIDES += \
