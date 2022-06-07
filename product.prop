@@ -1,0 +1,23 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Audio
+ro.af.client_heap_size_kbyte=1536
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.notification_sound=pixiedust.ogg
+
+## Battery (Fake)
+ro.boot.fake_battery=42
+
+## HDMI
+ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
+ro.sys.hdmiin.enable=true
+
+## Identifiers
+ro.oem.key1=ATV00100020
+
+## LMK
+ro.lmk.use_new_strategy=true
