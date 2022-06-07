@@ -1,0 +1,27 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Audio
+ro.config.media_vol_default=20
+ro.config.media_vol_steps=25
+
+## DRM
+drm.service.enabled=1
+vendor.drm.service.enable=true
+
+## NRDP
+ro.vendor.nrdp.validation=ninja_7
+
+## Platform
+ro.vendor.platform.is.tv=0
+
+## SOC
+ro.soc.manufacturer=Amlogic
+
+## Wi-Fi
+ro.carrier=wifi-only
+wifi.direct.interface=p2p-dev-wlan0
+wifi.interface=wlan0
