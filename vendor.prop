@@ -1,0 +1,70 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Audio
+ro.config.media_vol_default=20
+ro.config.media_vol_steps=25
+ro.vendor.platform.disable.audiorawout=false
+
+## Crypto
+ro.crypto.volume.options=aes-256-xts
+
+## Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=384m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
+
+## DRM
+drm.service.enabled=1
+vendor.drm.service.enable=true
+
+## Graphics
+mbx.hdmiin.switchfull=false
+mbx.hdmiin.videolayer=false
+persist.sys.hdmi.keep_awake=false
+persist.vendor.sys.cec.power_assist_standby=false
+persist.vendor.sys.cec.set_menu_language=false
+ro.hdmi.device_type=4
+ro.hdmi.set_menu_language=true
+ro.surface_flinger.max_graphics_height=1080
+ro.surface_flinger.max_graphics_width=1920
+ro.surface_flinger.update_device_product_info_on_hotplug_reconnect=1
+ro.vendor.hdmi.auto_otp=false
+ro.vendor.platform.hdmi.device_type=4
+ro.vendor.platform.need.display.hdmicec=true
+ro.vendor.platform.has.mbxuimode=true
+ro.vendor.platform.has.realoutputmode=true
+
+## LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
+
+## Logging
+log.tag.stats_log=I
+ro.logd.size.stats=64K
+
+## Media
+ro.media.maxmem=629145600
+ro.vendor.platform.support.dolby=true
+ro.vendor.platform.support.dts=true
+
+## NRDP
+ro.vendor.nrdp.validation=ninja_7
+
+## Platform
+ro.vendor.platform.is.tv=0
+
+## SOC
+ro.soc.manufacturer=Amlogic
+
+## Wi-Fi
+ro.carrier=wifi-only
+wifi.direct.interface=p2p-dev-wlan0
+wifi.interface=wlan0
