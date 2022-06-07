@@ -1,0 +1,14 @@
+## Audio
+ro.af.client_heap_size_kbyte=1536
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.notification_sound=pixiedust.ogg
+
+## Battery (Fake)
+ro.boot.fake_battery=42
+
+## HDMI
+ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
+ro.sys.hdmiin.enable=true
+
+## LMK
+ro.lmk.use_new_strategy=true
