@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfcd4e98_85b26bb5",
+        "filename": "lineage.dependencies",
+        "patchSetId": 12
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2022-06-08T05:04:13Z",
+      "side": 1,
+      "message": "medi-pie  - looks like typo here",
+      "revId": "9af364994cecb505708a85c2049f8bfd9715a928",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
