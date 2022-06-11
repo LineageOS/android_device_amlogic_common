@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b71faa67_53b3d865",
+        "filename": "amlogic.mk",
+        "patchSetId": 28
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T18:39:33Z",
+      "side": 1,
+      "message": "Not all of these are common.",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 40
+      },
+      "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "77b1e271_9a500da0",
+        "filename": "manifest.xml",
+        "patchSetId": 28
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T18:39:33Z",
+      "side": 1,
+      "message": "GX doesn\u0027t seem to have BT 2.0 audio HAL.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
