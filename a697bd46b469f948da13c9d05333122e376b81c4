@@ -22,6 +22,30 @@
       },
       "revId": "a697bd46b469f948da13c9d05333122e376b81c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0b19864_e2de134a",
+        "filename": "amlogic.mk",
+        "patchSetId": 24
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T16:09:16Z",
+      "side": 1,
+      "message": "Actually, it might be better to leave it like this. This way only the devices that don\u0027t have BT must set the flag.",
+      "parentUuid": "f420eea6_90b514c2",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 37
+      },
+      "revId": "a697bd46b469f948da13c9d05333122e376b81c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
