@@ -70,6 +70,30 @@
       },
       "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66fc2308_7164e05a",
+        "filename": "vendor.prop",
+        "patchSetId": 23
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-11T15:54:20Z",
+      "side": 1,
+      "message": "agree lol",
+      "parentUuid": "4a357184_1e1f4f8f",
+      "range": {
+        "startLine": 56,
+        "startChar": 25,
+        "endLine": 56,
+        "endChar": 26
+      },
+      "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
