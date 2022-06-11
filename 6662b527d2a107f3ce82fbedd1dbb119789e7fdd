@@ -46,6 +46,30 @@
       },
       "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a357184_1e1f4f8f",
+        "filename": "vendor.prop",
+        "patchSetId": 23
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T15:53:42Z",
+      "side": 1,
+      "message": "I am not saying it\u0027s any derp at your end. It\u0027s just funny, considering the prop naming.",
+      "parentUuid": "f71b7d0a_8e69f9c1",
+      "range": {
+        "startLine": 56,
+        "startChar": 25,
+        "endLine": 56,
+        "endChar": 26
+      },
+      "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
