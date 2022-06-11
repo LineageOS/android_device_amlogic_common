@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f420eea6_90b514c2",
+        "filename": "amlogic.mk",
+        "patchSetId": 24
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T16:01:05Z",
+      "side": 1,
+      "message": "The logic needs to be reverted back to the gx-common tree state. This doesn\u0027t work either and the fix is to set TARGET_HAVE_BLUETOOTH in target\u0027s product makefile (device.mk).",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 37
+      },
+      "revId": "a697bd46b469f948da13c9d05333122e376b81c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
