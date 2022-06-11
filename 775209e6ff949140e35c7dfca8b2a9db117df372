@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0d82a5a_7a80f843",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2022-06-11T07:44:22Z",
+      "side": 1,
+      "message": "This was merged - so drm1.0 should be dropped here as well?https://review.lineageos.org/c/LineageOS/android_device_amlogic_g12-common/+/332532",
+      "revId": "775209e6ff949140e35c7dfca8b2a9db117df372",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
