@@ -46,6 +46,30 @@
       },
       "revId": "a697bd46b469f948da13c9d05333122e376b81c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9f7ac30_b504d696",
+        "filename": "amlogic.mk",
+        "patchSetId": 24
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-11T16:12:09Z",
+      "side": 1,
+      "message": "I did it that way (devices without declare such) as CTS/VTS require BT.\n\nso safer to assume it has it and let devkits/china boxes say they don\u0027t.",
+      "parentUuid": "e0b19864_e2de134a",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 37
+      },
+      "revId": "a697bd46b469f948da13c9d05333122e376b81c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
