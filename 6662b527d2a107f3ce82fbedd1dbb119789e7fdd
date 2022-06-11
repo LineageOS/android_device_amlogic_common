@@ -22,6 +22,30 @@
       },
       "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f71b7d0a_8e69f9c1",
+        "filename": "vendor.prop",
+        "patchSetId": 23
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-11T15:51:50Z",
+      "side": 1,
+      "message": "nolenjohnson@ODS-PROD:~/dumps/deadpool$ grep -r ro.vendor.platform.is.tv\ngrep: system/system/system_ext/priv-app/droidlogic-res/droidlogic-res.apk: binary file matches\ngrep: vendor/framework/droidlogic.jar: binary file matches\nvendor/build.prop:ro.vendor.platform.is.tv\u003d0\n\nYeah, that is funny.",
+      "parentUuid": "648f4599_fda9cf6e",
+      "range": {
+        "startLine": 56,
+        "startChar": 25,
+        "endLine": 56,
+        "endChar": 26
+      },
+      "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
