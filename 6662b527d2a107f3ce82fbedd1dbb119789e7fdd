@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "648f4599_fda9cf6e",
+        "filename": "vendor.prop",
+        "patchSetId": 23
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-11T15:51:03Z",
+      "side": 1,
+      "message": "Quite funny that this prop is set to 0.",
+      "range": {
+        "startLine": 56,
+        "startChar": 25,
+        "endLine": 56,
+        "endChar": 26
+      },
+      "revId": "6662b527d2a107f3ce82fbedd1dbb119789e7fdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
