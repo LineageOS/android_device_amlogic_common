@@ -33,6 +33,42 @@
       "message": "It look like device/amlogic/sepolicy/ should be added to dependencies",
       "revId": "775209e6ff949140e35c7dfca8b2a9db117df372",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9b322d1_85265abb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-11T14:51:22Z",
+      "side": 1,
+      "message": "yes.",
+      "parentUuid": "a0d82a5a_7a80f843",
+      "revId": "775209e6ff949140e35c7dfca8b2a9db117df372",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4ca789a_fb029e92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-11T14:51:22Z",
+      "side": 1,
+      "message": "yup, done",
+      "parentUuid": "e64278d6_1f781852",
+      "revId": "775209e6ff949140e35c7dfca8b2a9db117df372",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
