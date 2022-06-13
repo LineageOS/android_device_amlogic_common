@@ -93,6 +93,30 @@
       },
       "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a70bec36_f72238ee",
+        "filename": "manifest.xml",
+        "patchSetId": 28
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2022-06-13T07:58:37Z",
+      "side": 1,
+      "message": "gx need b2 2.0 audio hal indeed, it should be moved to common . Current gx tree done based on vim1/vim2 roms, both lack bluetooth, so some configs and hals maybe missing here. \n\ncommon bt configs maybe have to be moved to common repo too \nvendor/etc/bluetooth/auto_pairing.conf\nvendor/etc/bluetooth/blacklist.conf\nvendor/etc/bluetooth/bt_vendor.conf\nvendor/etc/bluetooth/bt_vendor_usb.conf",
+      "parentUuid": "4deb52e0_70a5c08f",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
