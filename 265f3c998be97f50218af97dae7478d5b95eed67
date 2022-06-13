@@ -117,6 +117,30 @@
       },
       "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0555fd5_2819d82f",
+        "filename": "manifest.xml",
+        "patchSetId": 28
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-13T16:12:22Z",
+      "side": 1,
+      "message": "I agree - But I would _very_ much like to avoid 3-deep extractors - so my vote is we just pull those into device tree.",
+      "parentUuid": "a70bec36_f72238ee",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "265f3c998be97f50218af97dae7478d5b95eed67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
