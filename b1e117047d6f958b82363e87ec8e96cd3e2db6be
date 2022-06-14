@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "412a6171_d36d893d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-14T03:17:13Z",
+      "side": 1,
+      "message": "Verified booting on Deadpool, wade.\n\nWent through each file and compared additions to drops, no discrepancies found.",
+      "revId": "b1e117047d6f958b82363e87ec8e96cd3e2db6be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
