@@ -6,7 +6,7 @@
 
 include $(CLEAR_VARS)
 
-LOGO_FILES := device/amlogic/common/logo
+LOGO_FILES ?= device/amlogic/common/logo
 
 IMGPACK := $(HOST_OUT_EXECUTABLES)/res_packer$(HOST_EXECUTABLE_SUFFIX)
 
