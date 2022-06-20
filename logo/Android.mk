@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifeq ($(PRODUCT_IS_ATV),true)
+
 include $(CLEAR_VARS)
 
 LOGO_FILES := device/amlogic/common/logo
@@ -31,3 +33,5 @@ INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_LOGOIMAGE_TARGET)
 
 .PHONY: logoimage
 logoimage: $(INSTALLED_LOGOIMAGE_TARGET)
+
+endif
