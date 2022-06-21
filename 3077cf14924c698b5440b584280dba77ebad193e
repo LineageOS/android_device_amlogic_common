@@ -22,6 +22,30 @@
       },
       "revId": "3077cf14924c698b5440b584280dba77ebad193e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e70357b_61691102",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-21T04:44:35Z",
+      "side": 1,
+      "message": "i want to build the logoimage, but with different logo",
+      "parentUuid": "23f7f3a5_de23cef3",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 21
+      },
+      "revId": "3077cf14924c698b5440b584280dba77ebad193e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
