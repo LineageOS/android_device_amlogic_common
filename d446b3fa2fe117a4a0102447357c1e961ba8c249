@@ -16,6 +16,23 @@
       "message": "This seems to make local signing cases not freak out?",
       "revId": "d446b3fa2fe117a4a0102447357c1e961ba8c249",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbdabcfc_16143216",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-06T17:39:54Z",
+      "side": 1,
+      "message": "meh, revert if signing still throws a fit.",
+      "revId": "d446b3fa2fe117a4a0102447357c1e961ba8c249",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
