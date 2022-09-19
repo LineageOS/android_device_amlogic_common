@@ -1,0 +1,13 @@
+#
+# Loadable Kernel Modules (LKM) Service
+#
+
+on fs
+    exec_start vendor.lkm_loader
+
+service vendor.lkm_loader /vendor/bin/lkm_loader.sh
+    class main
+    user root
+    group root
+    oneshot
+    disabled
