@@ -24,9 +24,9 @@ define aml-compress-dtb
 	fi;
 endef
 
-$(INSTALLED_2NDBOOTLOADER_TARGET): $(INSTALLED_KERNEL_TARGET) $(DTBTOOL) | $(ACP) $(MINIGZIP)
+$(DTBTARGET): $(INSTALLED_KERNEL_TARGET) $(DTBTOOL) | $(ACP) $(MINIGZIP)
 ifeq ($(words $(TARGET_DTB_NAME)),1)
-	$(hide) $(ACP) $(DTBDIR)/$(TARGET_DTB_NAME).dtb $(DTBTARGET)
+	$(hide) $(ACP) $(DTBDIR)/$(TARGET_DTB_NAME).dtb $@
 else
 	$(hide) mkdir -p $(DTBTMP)
 	$(foreach aDts, $(TARGET_DTB_NAME), \
@@ -35,15 +35,12 @@ else
 	$(hide) $(DTBTOOL) -o $(DTBTARGET) -p $(DTCDIR) $(DTBTMP)
 	$(hide) rm -rf $(DTBTMP)
 endif
-	$(hide) $(call aml-compress-dtb, $(DTBTARGET))
-	$(hide) $(ACP) $(DTBTARGET) $@
+	$(hide) $(call aml-compress-dtb, $@)
 
 $(BOARD_PREBUILT_DTBOIMAGE): $(INSTALLED_KERNEL_TARGET) $(MKDTBOIMG)
 	$(MKDTBOIMG) create $@ $(foreach dtbo, $(TARGET_DTBO_NAME), \
 		$(DTBDIR)/$(strip $(dtbo)).dtb \
 	)
-
-$(DTBTARGET): $(INSTALLED_2NDBOOTLOADER_TARGET)
 
 ifeq ($(TARGET_FLASH_DTB_PARTITION),true)
 INSTALLED_RADIOIMAGE_TARGET += $(DTBTARGET)
@@ -51,5 +48,7 @@ endif
 
 .PHONY: dtbotest
 dtbotest: $(BOARD_PREBUILT_DTBOIMAGE)
+
+ALL_DEFAULT_INSTALLED_MODULES += $(DTBTARGET) $(BOARD_PREBUILT_DTBOIMAGE)
 
 endif
