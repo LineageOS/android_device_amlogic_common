@@ -39,6 +39,7 @@ ro.vendor.platform.has.realoutputmode=true
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
+ro.lmk.use_new_strategy=true
 
 ## Logging
 log.tag.stats_log=I
@@ -53,12 +54,14 @@ ro.vendor.platform.support.dts=true
 ro.vendor.nrdp.validation=ninja_7
 
 ## Platform
+poweroff.doubleclick=1
+ro.boot.wificountrycode=US
 ro.vendor.platform.is.tv=0
+vendor.sys.pq.supports=false
 
 ## SOC
 ro.soc.manufacturer=Amlogic
 
 ## Wi-Fi
 ro.carrier=wifi-only
-wifi.direct.interface=p2p-dev-wlan0
 wifi.interface=wlan0
