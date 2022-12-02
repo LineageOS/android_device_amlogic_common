@@ -67,7 +67,8 @@ endif
 ## DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
-    libdrm.vendor
+    libdrm.vendor \
+    libz_stable.vendor
 
 ## fastbootd
 PRODUCT_PACKAGES += fastbootd
@@ -158,3 +159,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
+
+PRODUCT_COPY_FILES +=  \
+    device/amlogic/common/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
