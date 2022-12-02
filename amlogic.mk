@@ -67,7 +67,8 @@ endif
 ## DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
-    libdrm.vendor
+    libdrm.vendor \
+    libz_stable.vendor
 
 ## fastbootd
 PRODUCT_PACKAGES += fastbootd
