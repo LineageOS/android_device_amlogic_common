@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "113baca3_e00e09fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-12-03T05:46:12Z",
+      "side": 1,
+      "message": "I have diff\u0027d and applied everything - remaining notes:\n\n# Moved to non versioned interface?\nOnly in deadpool_12/vendor/lib: android.hardware.audio.common@7.0-enums.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio.common@7.0-util.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio.common@7.0.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio.effect@7.0-util.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio.effect@7.0.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio@7.0-util.so\nOnly in deadpool_12/vendor/lib: android.hardware.audio@7.0.so\n\n\n# Wi-Fi MultiHAL fw\u0027s - uesless to standalone hal AFAICT\nOnly in deadpool_12/vendor/lib: libbt-vendor.so\n\nOnly in deadpool/vendor/: firmware\nOnly in deadpool/vendor/lib: libbluetooth_mtkbt.so\nOnly in deadpool/vendor/lib: libbt-vendor_aml.so\nOnly in deadpool/vendor/lib: libbt-vendor_bcm.so\nOnly in deadpool/vendor/lib: libbt-vendor_mtk.so\nOnly in deadpool/vendor/lib: libbt-vendor_qca.so\nOnly in deadpool/vendor/lib: libbt-vendor_rtl.so\nOnly in deadpool/vendor/lib: libbt-vendor_uwe.so\n\n\nOnly in deadpool/vendor/bin: rtkcmd\nOnly in deadpool/vendor/bin: wpa_cli\nOnly in deadpool/vendor/etc/bluetooth: qca6174\nOnly in deadpool/vendor/etc/bluetooth: qca9377\nOnly in deadpool/vendor/etc/bluetooth: rtkbt.conf\nOnly in deadpool/vendor/etc/bluetooth: uwe562x\nOnly in deadpool/vendor/etc/bluetooth: w1\n\nOnly in deadpool/vendor/bin: bdt_unisoc\n\n\n## ???? - no clue if just the multiHAL uses this maybe?\nOnly in deadpool/vendor/etc/wifi: bcm_supplicant.conf\nOnly in deadpool/vendor/etc/wifi: bcm_supplicant_overlay.conf\n\n\n# looks like all devices should get some form of this overlay, but each tailored?\nOnly in deadpool/vendor/overlay: DeadpoolAxelOverlay.apk\n\n",
+      "revId": "6b8ea6c4aaf8ae708f9295090314bf7651e20bc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
