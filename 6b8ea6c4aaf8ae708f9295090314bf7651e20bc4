@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "60f5fcfe_2d40c547",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-12-06T06:37:22Z",
+      "side": 1,
+      "message": "Remaining pieces stock has that we might want to adapt to?\n\n# ?\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.hostapd@1.0.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.hostapd@1.1.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.hostapd@1.2.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.hostapd@1.3.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.supplicant@1.0.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.supplicant@1.1.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.supplicant@1.2.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.supplicant@1.3.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.wifi.supplicant@1.4.so\n\n# Audio - Unsure\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.audio.common@2.0-util.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.audio.effect@2.0-util.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.audio.effect@2.0.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.audio@2.0-util.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib: android.hardware.audio@2.0.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib/hw: android.hardware.audio.effect@2.0-impl.so\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib/hw: android.hardware.audio@2.0-impl.so\n\n\n# We do this correctly instead\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/etc/permissions: android.software.opengles.deqp.level-2021-03-01.xml\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/etc/permissions: android.software.vulkan.deqp.level-2021-03-01.xml\n\n# Clearkey/others avail, so not needed?\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/bin/hw: android.hardware.drm@1.0-service\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/etc/init: android.hardware.drm@1.0-service.rc\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/lib/hw: android.hardware.drm@1.0-impl.so\n\n# We put it at vendor/etc\nOnly in /home/nolenjohnson/dumps/deadpool/vendor/: ueventd.rc",
+      "parentUuid": "113baca3_e00e09fb",
+      "revId": "6b8ea6c4aaf8ae708f9295090314bf7651e20bc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e536b2ac_a260588d",
