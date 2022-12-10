@@ -64,5 +64,4 @@ ro.soc.manufacturer=Amlogic
 
 ## Wi-Fi
 ro.carrier=wifi-only
-wifi.direct.interface=p2p-dev-wlan0
 wifi.interface=wlan0
