@@ -151,12 +151,16 @@ PRODUCT_PACKAGES += \
 
 ## Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     hostapd \
     libwpa_client \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
+
+ifneq ($(TARGET_HAVE_WIFIHAL),false)
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+endif
 
 PRODUCT_COPY_FILES +=  \
     device/amlogic/common/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
