@@ -202,7 +202,7 @@ PRODUCT_PACKAGES += \
 
 ifneq ($(TARGET_HAVE_WIFIHAL),false)
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
+    android.hardware.wifi-service
 endif
 
 PRODUCT_COPY_FILES +=  \
