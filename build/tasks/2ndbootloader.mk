@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(filter gxl gxm g12a g12b sm1, $(TARGET_AMLOGIC_SOC)),)
+ifneq ($(filter gxl gxm g12a g12b sm1 s4 t7 sc2, $(TARGET_AMLOGIC_SOC)),)
 
 $(INSTALLED_2NDBOOTLOADER_TARGET): $(INSTALLED_DTBIMAGE_TARGET)
 	$(hide) cp $< $@
