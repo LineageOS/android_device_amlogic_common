@@ -38,12 +38,16 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 TARGET_SCREEN_DENSITY := 320
 
 ## HIDL
-ifeq ($(BOARD_HAVE_BLUETOOTH),false)
-DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
+ifeq ($(TARGET_KERNEL_VERSION),5.4)
+DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_5.4.xml
 else
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
+endif
+
+ifneq ($(BOARD_HAVE_BLUETOOTH),false)
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_bt.xml
 endif
+
 DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
 ## Kernel
