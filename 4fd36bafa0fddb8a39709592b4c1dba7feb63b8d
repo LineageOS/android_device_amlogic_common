@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8c1f1a5_42d65e92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2023-06-21T12:26:24Z",
+      "side": 1,
+      "message": "doesnt work as intended, avb signed image included in vendor_boot and breaks bootloader - cannot find fdt. It looks like need to make signed and non signed targets for partition image and for including into boot",
+      "revId": "4fd36bafa0fddb8a39709592b4c1dba7feb63b8d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
