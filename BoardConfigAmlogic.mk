@@ -35,7 +35,11 @@ BOARD_USES_ALSA_AUDIO := true
 WITH_DEXPREOPT_DEBUG_INFO := false
 
 ## Display
+ifeq ($(PRODUCT_IS_ATV),true)
 TARGET_SCREEN_DENSITY := 320
+else
+TARGET_SCREEN_DENSITY := 240
+endif
 
 ## HIDL
 ifeq ($(BOARD_HAVE_BLUETOOTH),false)

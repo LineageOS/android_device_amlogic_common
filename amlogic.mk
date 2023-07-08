@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -38,12 +38,16 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    atv.setup.bt_remote_pairing=true \
     ro.vendor.autoconnectbt.btclass=50c \
     ro.vendor.autoconnectbt.isneed=false \
     ro.vendor.autoconnectbt.macprefix=00:CD:FF \
     ro.vendor.autoconnectbt.nameprefix=Amlogic_RC \
     ro.vendor.autoconnectbt.rssilimit=70
+
+ifeq ($(PRODUCT_IS_ATV),true)
+PRODUCT_PROPERTY_OVERRIDES += \
+    atv.setup.bt_remote_pairing=true
+endif
 
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -55,7 +59,11 @@ TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
 
 ## Characteristics
+ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_CHARACTERISTICS := tv
+else
+PRODUCT_CHARACTERISTICS := tablet
+endif
 
 ## Codecs
 ifeq ($(PRODUCT_USE_SW_OMX),true)
@@ -125,6 +133,12 @@ PRODUCT_COPY_FILES +=  \
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+ifeq ($(PRODUCT_IS_ATV),true)
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-tv
+endif
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 ## Permissions (Hardware)
