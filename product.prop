@@ -1,7 +1,7 @@
 ## Audio
 ro.af.client_heap_size_kbyte=1536
-ro.config.ringtone=Ring_Synth_04.ogg
-ro.config.notification_sound=pixiedust.ogg
+ro.config.ringtone?=Ring_Synth_04.ogg
+ro.config.notification_sound?=pixiedust.ogg
 
 ## Battery (Fake)
 ro.boot.fake_battery=42
