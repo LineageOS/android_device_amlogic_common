@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -119,7 +119,8 @@ PRODUCT_COPY_FILES +=  \
 
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 ## Permissions
