@@ -83,11 +83,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
-## GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
-
 ## Hardware Composer
 PRODUCT_PACKAGES += \
     libhwc2on1adapter \
