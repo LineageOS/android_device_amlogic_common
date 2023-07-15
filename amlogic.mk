@@ -5,7 +5,11 @@
 #
 
 ## AAPT
+ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
+else
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+endif
 
 ## Audio
 PRODUCT_COPY_FILES += \
