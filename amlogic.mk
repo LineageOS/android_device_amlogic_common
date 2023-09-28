@@ -59,8 +59,10 @@ PRODUCT_COPY_FILES +=  \
 endif
 
 ## Boot animation
+ifeq ($(PRODUCT_IS_ATV),true)
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
+endif
 
 ## Characteristics
 ifeq ($(PRODUCT_IS_ATV),true)
