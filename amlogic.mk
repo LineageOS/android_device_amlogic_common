@@ -58,10 +58,6 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 endif
 
-## Boot animation
-TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 1920
-
 ## Characteristics
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_CHARACTERISTICS := tv
