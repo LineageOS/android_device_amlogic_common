@@ -91,9 +91,6 @@ TARGET_BOOTLOADER_IS_2ND := true
 BOARD_MKBOOTIMG_ARGS = --kernel_offset $(BOARD_KERNEL_OFFSET) --second_offset $(BOARD_SECOND_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET) --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 endif
 
-## LMKD
-TARGET_LMKD_STATS_LOG := true
-
 ## Partitions
 ifeq ($(TARGET_KERNEL_VERSION),5.4)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
