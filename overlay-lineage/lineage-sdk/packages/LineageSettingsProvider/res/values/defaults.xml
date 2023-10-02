@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2015 The CyanogenMod Project
+                   2019-2023 The LineageOS Project
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Defaults for System -->
+
+    <!-- Default for LineageSettings.System.DOUBLE_TAP_SLEEP_GESTURE -->
+    <bool name="def_dt2s_gesture_enabled">false</bool>
+
+</resources>
