@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43b9be82_e7e4a9d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-02T13:17:37Z",
+      "side": 1,
+      "message": "This goes with the last change of https://review.lineageos.org/q/topic:%2213-dt2s%22. The usecase here is non-ATV target connected to extenal display with touchscreen support. If you don\u0027t like it here I can move to target\u0027s device tree.",
+      "revId": "a4d2682733189d3bb6a601d7d0b6a563f7fd7d0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
