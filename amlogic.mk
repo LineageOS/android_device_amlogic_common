@@ -112,6 +112,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
 
+## Keymaster
+ifeq ($(TARGET_HAS_TEE),false)
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1-service
+endif
+
 ## Logo
 PRODUCT_HOST_PACKAGES += \
     res_packer
