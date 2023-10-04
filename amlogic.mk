@@ -119,6 +119,12 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service
 endif
 
+## Keymaster
+ifeq ($(TARGET_HAS_TEE),false)
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1-service
+endif
+
 ## Logo
 PRODUCT_HOST_PACKAGES += \
     res_packer
