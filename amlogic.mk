@@ -94,10 +94,8 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 ## Gatekeeper
-ifeq ($(TARGET_HAS_TEE),false)
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
-endif
 
 ## Hardware Composer
 PRODUCT_PACKAGES += \
