@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py
+MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg
 DTBDIR := $(PRODUCT_OUT)/obj/KERNEL_OBJ/arch/arm64/boot/dts/amlogic
 
 TARGET_DTBO_NAME ?= android_p_overlay_dt
