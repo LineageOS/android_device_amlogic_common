@@ -34,6 +34,23 @@
       "parentUuid": "f97ff045_149cea28",
       "revId": "32c322048e8c627ef237c189b745dc245d497664",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb32ab79_15ee1f1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-06T08:47:49Z",
+      "side": 1,
+      "message": "Oh well... deadpool builds fine, which is a TEE target. Not sure how this happens on dopinder, but I will check.",
+      "revId": "32c322048e8c627ef237c189b745dc245d497664",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
