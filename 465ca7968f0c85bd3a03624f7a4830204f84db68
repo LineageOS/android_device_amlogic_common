@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad5c8aeb_521f6d20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-20T17:34:57Z",
+      "side": 1,
+      "message": "Tomin, can you test this with any device using 5.4 kernel? The only change for you is using clang-14, so you\u0027ll probably need to pick https://review.lineageos.org/c/LineageOS/android_hardware_amlogic_kernel-modules_dhd-driver/+/370471 and port https://review.lineageos.org/c/LineageOS/android_hardware_amlogic_kernel-modules_media/+/370472 to media-5.4.",
+      "revId": "465ca7968f0c85bd3a03624f7a4830204f84db68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
