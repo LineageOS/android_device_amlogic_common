@@ -33,6 +33,24 @@
       "message": "Chain is fully working on radxa0. Testing on different targets (Nolen - dopinder ; Tomin - something 5.4) is appreciated.",
       "revId": "465ca7968f0c85bd3a03624f7a4830204f84db68",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57f63fc8_5ad8d005",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-21T00:32:08Z",
+      "side": 1,
+      "message": "Oh well, by chain I mean topic...",
+      "parentUuid": "feac2374_555903a9",
+      "revId": "465ca7968f0c85bd3a03624f7a4830204f84db68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
