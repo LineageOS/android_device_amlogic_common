@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3917066d_c72abc00",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-23T16:09:54Z",
+      "side": 1,
+      "message": "Sidenote: do not attempt to backport this to lineage-19.1 as TARGET_KERNEL_LLVM_BINUTILS was only introduced in lineage-20.0.",
+      "revId": "a83e205054e8711db87b49e51facc3d9c0a7e989",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
