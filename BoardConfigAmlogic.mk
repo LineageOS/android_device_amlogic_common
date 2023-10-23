@@ -72,7 +72,6 @@ BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1 otg_device=1
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_USES_64_BIT_BINDER := true
 
 ifeq ($(TARGET_KERNEL_VERSION),5.4)
