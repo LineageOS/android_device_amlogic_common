@@ -116,6 +116,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4896849920
 BOARD_USES_METADATA_PARTITION := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+include vendor/lineage/config/BoardConfigReservedSize.mk
+endif
+
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
