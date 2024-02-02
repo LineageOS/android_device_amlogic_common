@@ -48,11 +48,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.autoconnectbt.nameprefix=Amlogic_RC \
     ro.vendor.autoconnectbt.rssilimit=70
 
-ifeq ($(PRODUCT_IS_ATV),true)
-PRODUCT_PROPERTY_OVERRIDES += \
-    atv.setup.bt_remote_pairing=true
-endif
-
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
