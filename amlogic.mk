@@ -66,7 +66,7 @@ endif
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_CHARACTERISTICS := tv
 else
-PRODUCT_CHARACTERISTICS ?= tablet
+PRODUCT_CHARACTERISTICS := tablet
 endif
 
 ## Codecs
