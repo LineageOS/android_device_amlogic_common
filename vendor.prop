@@ -62,5 +62,5 @@ vendor.sys.pq.supports=false
 ro.soc.manufacturer=Amlogic
 
 ## Wi-Fi
-ro.carrier=wifi-only
+ro.carrier?=wifi-only
 wifi.interface=wlan0
