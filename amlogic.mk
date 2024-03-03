@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -62,8 +62,13 @@ endif
 ## Characteristics
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_CHARACTERISTICS := tv
+<<<<<<< HEAD   (76fb1a aml: Correct BT support flag)
 else
 PRODUCT_CHARACTERISTICS ?= tablet
+=======
+else ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
+PRODUCT_CHARACTERISTICS := tablet
+>>>>>>> CHANGE (5bc5c9 aml: Do not set product characteristics for Automotive)
 endif
 
 ## Codecs
