@@ -65,7 +65,7 @@ endif
 ## Characteristics
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_CHARACTERISTICS := tv
-else
+else ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
 PRODUCT_CHARACTERISTICS := tablet
 endif
 
