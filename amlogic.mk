@@ -100,12 +100,14 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter
 
 ## HDMI CEC
+ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_PACKAGES += \
     android.hardware.tv.cec@1.0-impl \
     android.hardware.tv.cec@1.0-service
 
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
+endif
 
 ## Keymaster
 ifeq ($(TARGET_HAS_TEE),false)
