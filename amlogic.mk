@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 ## Bluetooth
-ifeq ($(TARGET_HAVE_BLUETOOTH),false)
+ifeq ($(BOARD_HAVE_BLUETOOTH),false)
 PRODUCT_PROPERTY_OVERRIDES += \
     config.disable_bluetooth=true
 else
