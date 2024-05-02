@@ -14,10 +14,8 @@ ro.fastbootd.available=true
 
 ## Graphics
 persist.sys.hdmi.keep_awake=false
-persist.vendor.sys.cec.set_menu_language=false
 persist.vendor.sys.hdmionly=true
 ro.hdmi.device_type=4
-ro.hdmi.set_menu_language=true
 ro.surface_flinger.max_graphics_height=1080
 ro.surface_flinger.max_graphics_width=1920
 ro.surface_flinger.update_device_product_info_on_hotplug_reconnect=1
