@@ -1,6 +1,3 @@
-## Crypto
-ro.crypto.volume.options=aes-256-xts
-
 ## Dalvik
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapmaxfree=8m
