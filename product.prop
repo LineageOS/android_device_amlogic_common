@@ -6,7 +6,6 @@ ro.boot.fake_battery=42
 
 ## Camera
 camera.disable_zsl_mode=1
-rw.camera.usb.faceback=true
 
 ## HDMI
 ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
