@@ -13,6 +13,9 @@ dalvik.vm.heaptargetutilization=0.75
 drm.service.enabled=1
 vendor.drm.service.enable=true
 
+## fastbootd
+ro.fastbootd.available=true
+
 ## Graphics
 persist.sys.hdmi.keep_awake=false
 persist.vendor.sys.cec.set_menu_language=false
