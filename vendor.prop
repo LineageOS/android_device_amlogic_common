@@ -31,10 +31,6 @@ ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 ro.lmk.use_new_strategy=true
 
-## Logging
-log.tag.stats_log=I
-ro.logd.size.stats=64K
-
 ## Media
 ro.media.maxmem=629145600
 ro.vendor.platform.support.dolby=true
