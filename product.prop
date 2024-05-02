@@ -4,9 +4,6 @@ ro.af.client_heap_size_kbyte=1536
 ## Battery (Fake)
 ro.boot.fake_battery=42
 
-## Camera
-camera.disable_zsl_mode=1
-
 ## HDMI
 ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
 ro.sys.hdmiin.enable=true
