@@ -45,11 +45,6 @@
     <!-- True if the device supports Sustained Performance Mode -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
-    <!-- Maximum size, specified in pixels, to restrain the display space width to. Height and
-         density will be scaled accordingly to maintain aspect ratio. A value of 0 indicates no
-         constraint will be enforced. -->
-    <integer name="config_maxUiWidth">1920</integer>
-
     <!-- CEC Configuration -->
     <bool name="config_cecPowerControlModeBroadcast_default">true</bool>
     <bool name="config_cecPowerControlModeTv_default">false</bool>
