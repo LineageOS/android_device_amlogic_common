@@ -6,9 +6,14 @@ ro.config.notification_sound?=pixiedust.ogg
 ## Battery (Fake)
 ro.boot.fake_battery=42
 
+<<<<<<< HEAD   (267055 aml: Commonize a few more BoardFlags)
 ## Camera
 camera.disable_zsl_mode=1
 rw.camera.usb.faceback=true
+=======
+## Bluetooth
+ro.boot.btmacaddr=22:22:ce:d2:ca:13
+>>>>>>> CHANGE (1dbcfc aml: Set default BT MAC in common)
 
 ## HDMI
 ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
