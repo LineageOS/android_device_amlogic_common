@@ -53,6 +53,8 @@ TARGET_SCREEN_DENSITY ?= 240
 endif
 
 ## HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(PLATFORM_PATH)/vendor_framework_compatibility_matrix.xml
 ifeq ($(TARGET_KERNEL_VERSION),5.4)
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_5.4.xml
 else
