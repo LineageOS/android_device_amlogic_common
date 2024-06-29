@@ -66,14 +66,6 @@ else ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
 PRODUCT_CHARACTERISTICS := tablet
 endif
 
-## Codecs
-ifeq ($(PRODUCT_USE_SW_OMX),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_sw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-endif
-
 ## Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
