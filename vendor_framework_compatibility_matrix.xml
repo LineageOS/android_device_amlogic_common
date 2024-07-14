@@ -8,6 +8,30 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.amlogic.hardware.hdmicec</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDroidHdmiCEC</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.amlogic.hardware.miracast_hdcp2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IHDCPService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.amlogic.hardware.remotecontrol</name>
+        <version>1.0</version>
+        <interface>
+            <name>IRemoteControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.amlogic.hardware.subtitleserver</name>
         <version>1.0</version>
         <interface>
