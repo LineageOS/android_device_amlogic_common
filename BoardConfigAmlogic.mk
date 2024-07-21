@@ -6,9 +6,6 @@
 
 PLATFORM_PATH := device/amlogic/common
 
-## BUILD_BROKEN_*
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
 ## Android Verified Boot
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
