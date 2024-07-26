@@ -21,25 +21,55 @@
 #include <health2impl/Health.h>
 
 using ::android::sp;
+using ::android::hardware::Return;
+using ::android::hardware::Void;
 using ::android::hardware::health::InitHealthdConfig;
 using ::android::hardware::health::V2_1::IHealth;
-using ::android::hardware::health::V2_1::implementation::Health;
 
 using namespace std::literals;
 
-// Passthrough implementation of the health service. Use default configuration.
-// It does not invoke callbacks unless update() is called explicitly. No
-// background thread is spawned to handle callbacks.
-//
-// The passthrough implementation is only allowed in recovery mode, charger, and
-// opened by the hwbinder service.
-// If Android is booted normally, the hwbinder service is used instead.
-//
-// This implementation only implements the "default" instance. It rejects
-// other instance names.
-// Note that the Android framework only reads values from the "default"
-// health HAL 2.1 instance.
+namespace android {
+namespace hardware {
+namespace health {
+namespace V2_1 {
+namespace implementation {
+
+class HealthImpl : public Health {
+ public:
+  HealthImpl(std::unique_ptr<healthd_config>&& config)
+    : Health(std::move(config)) {}
+ protected:
+  void UpdateHealthInfo(HealthInfo* health_info) override;
+};
+
+void HealthImpl::UpdateHealthInfo(HealthInfo* health_info) {
+  auto* battery_props = &health_info->legacy.legacy;
+  battery_props->chargerAcOnline = false;
+  battery_props->chargerUsbOnline = false;
+  battery_props->chargerWirelessOnline = false;
+  battery_props->maxChargingCurrent = 500000;
+  battery_props->maxChargingVoltage = 5000000;
+  battery_props->batteryStatus = V1_0::BatteryStatus::UNKNOWN;
+  battery_props->batteryHealth = V1_0::BatteryHealth::GOOD;
+  battery_props->batteryPresent = false;
+  battery_props->batteryLevel = 85;
+  battery_props->batteryVoltage = 3600;
+  battery_props->batteryTemperature = 350;
+  battery_props->batteryCurrent = 400000;
+  battery_props->batteryCycleCount = 32;
+  battery_props->batteryFullCharge = 4000000;
+  battery_props->batteryChargeCounter = 0;
+  battery_props->batteryTechnology = "Li-ion";
+}
+
+}  // namespace implementation
+}  // namespace V2_1
+}  // namespace health
+}  // namespace hardware
+}  // namespace android
+
 extern "C" IHealth* HIDL_FETCH_IHealth(const char* instance) {
+    using ::android::hardware::health::V2_1::implementation::HealthImpl;
     if (instance != "default"sv) {
         return nullptr;
     }
@@ -49,5 +79,5 @@ extern "C" IHealth* HIDL_FETCH_IHealth(const char* instance) {
     // This implementation uses default config. If you want to customize it
     // (e.g. with healthd_board_init), do it here.
 
-    return new Health(std::move(config));
+    return new HealthImpl(std::move(config));
 }
