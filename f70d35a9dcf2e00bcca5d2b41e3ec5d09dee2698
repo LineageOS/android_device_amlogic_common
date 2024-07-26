@@ -52,6 +52,24 @@
       "parentUuid": "61068ebc_51723763",
       "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7f5ffe4_26c6ec27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-07-26T17:58:50Z",
+      "side": 1,
+      "message": "I\u0027ll consider about it after the bringup is done, thanks.\n\n(tbh I\u0027m not sure if I\u0027d want to fork and maintain a health HAL just for this... and I\u0027ll have to verify it on AOSP GSI)",
+      "parentUuid": "53974f66_21d37133",
+      "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
