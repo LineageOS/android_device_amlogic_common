@@ -1,9 +1,6 @@
 ## Audio
 ro.af.client_heap_size_kbyte=1536
 
-## Battery (Fake)
-ro.boot.fake_battery=42
-
 ## Bluetooth
 ro.boot.btmacaddr=22:22:ce:d2:ca:13
 
