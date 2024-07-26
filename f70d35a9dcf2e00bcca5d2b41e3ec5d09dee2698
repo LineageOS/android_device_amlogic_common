@@ -34,6 +34,24 @@
       "parentUuid": "7ac0ea37_8a879a69",
       "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53974f66_21d37133",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-26T17:22:37Z",
+      "side": 1,
+      "message": "@seba@sebaubuntu.dev thanks, but that\u0027s not desired for aml devices.\n\nInitial goal is to get rid of prebuilt droidlogic 2.1 hidl HAL, which essentially reports props like this:\n\n    props-\u003echargerAcOnline \u003d true;\n    props-\u003echargerUsbOnline \u003d false;\n    props-\u003echargerWirelessOnline \u003d false;\n    props-\u003emaxChargingCurrent \u003d 0;\n    props-\u003emaxChargingVoltage \u003d 0;\n    props-\u003ebatteryStatus \u003d 2;\n    props-\u003ebatteryHealth \u003d 2;\n    props-\u003ebatteryPresent \u003d false;\n    props-\u003ebatteryLevel \u003d 50;\n    props-\u003ebatteryVoltage \u003d 4;\n    props-\u003ebatteryTemperature \u003d 40;\n    props-\u003ebatteryCurrent \u003d 0;\n    props-\u003ebatteryCycleCount \u003d 0;\n    props-\u003ebatteryFullCharge \u003d 0;\n    props-\u003ebatteryChargeCounter \u003d 10;\n    props-\u003ebatteryTechnology \u003d \"Li-ion\";\n    \nAdditionally to that, I wanted to see if Android could really hide battery stuff like statusbar icon without the need of https://review.lineageos.org/391851.",
+      "parentUuid": "61068ebc_51723763",
+      "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
