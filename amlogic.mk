@@ -90,6 +90,11 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libhwc2onfbadapter
 
+## Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.batteryless \
+    android.hardware.health-service.batteryless_recovery
+
 ## HDMI CEC
 ifeq ($(PRODUCT_IS_ATV),true)
 PRODUCT_PACKAGES += \
