@@ -1,4 +1,5 @@
 // Copyright (C) 2019 The Android Open Source Project
+//               2024 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,8 +14,8 @@
 // limitations under the License.
 
 cc_library_shared {
-    name: "android.hardware.health@2.1-impl",
-    stem: "android.hardware.health@2.0-impl-2.1",
+    name: "android.hardware.health@2.1-impl.amlogic",
+    stem: "android.hardware.health@2.0-impl-2.1.amlogic",
 
     // Only vendor and recovery variants are allowed, not core.
     vendor: true,
@@ -31,19 +32,19 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "android.hardware.health@2.1-service",
+    name: "android.hardware.health@2.1-service.amlogic",
     vendor: true,
     defaults: ["android.hardware.health@2.1-impl-defaults"],
-    init_rc: ["android.hardware.health@2.1-service.rc"],
+    init_rc: ["android.hardware.health@2.1-service.amlogic.rc"],
 
     srcs: [
         "service.cpp",
     ],
 
-    required: ["android.hardware.health@2.1-impl"],
+    required: ["android.hardware.health@2.1-impl.amlogic"],
 
     vintf_fragments: [
-        "android.hardware.health@2.1.xml"
+        "android.hardware.health@2.1-service.amlogic.xml"
     ],
 
     overrides: [

@@ -1,4 +1,4 @@
-service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
+service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service.amlogic
     class hal charger
     user system
     group system
