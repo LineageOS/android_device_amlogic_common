@@ -70,6 +70,24 @@
       "parentUuid": "53974f66_21d37133",
       "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "828e967c_e54c0544",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-26T18:04:50Z",
+      "side": 1,
+      "message": "My question was more to understand if we should create a -batteryless custom HAL in lineage/interfaces.",
+      "parentUuid": "c7f5ffe4_26c6ec27",
+      "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
