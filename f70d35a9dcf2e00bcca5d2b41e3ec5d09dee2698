@@ -124,6 +124,24 @@
       "parentUuid": "a891565e_b4c530cc",
       "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "270d483f_8bb93bba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-07-27T01:01:47Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_nvidia_tegra-common/+/392373\nI did this for tegra.",
+      "parentUuid": "b30fc02e_3e40c99f",
+      "revId": "f70d35a9dcf2e00bcca5d2b41e3ec5d09dee2698",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
