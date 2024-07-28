@@ -25,8 +25,8 @@
          string defined in core/res/res/config.xml to properly exclude the icon.
      -->
     <string-array name="config_statusBarIconsToExclude" translatable="false">
-        <item>@*android:string/status_bar_battery</item>
-        <item>@*android:string/status_bar_headset</item>
-        <item>@*android:string/status_bar_rotate</item>
+        <item>battery</item>
+        <item>headset</item>
+        <item>rotate</item>
     </string-array>
 </resources>
