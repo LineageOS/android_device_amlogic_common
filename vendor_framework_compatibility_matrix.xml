@@ -40,6 +40,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.amlogic.hardware.screencontrol</name>
+        <version>1.0</version>
+        <interface>
+            <name>IScreenControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.amlogic.hardware.systemcontrol</name>
         <version>1.0-1</version>
         <interface>
