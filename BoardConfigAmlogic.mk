@@ -130,6 +130,7 @@ $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
 TARGET_BOARD_PLATFORM := amlogic
 
 ## Properties
+TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
 TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
