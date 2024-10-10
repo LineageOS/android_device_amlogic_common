@@ -136,7 +136,7 @@ TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 ## Recovery
 TARGET_RECOVERY_DENSITY := 200dpi
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 
 ## SELinux
 include device/amlogic/sepolicy/sepolicy.mk
