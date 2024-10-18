@@ -39,6 +39,9 @@ ro.vendor.platform.support.dolby=true
 ro.vendor.platform.is.tv=0
 vendor.sys.pq.supports=false
 
+# Recovery
+ro.recovery.batteryless=true
+
 ## SOC
 ro.soc.manufacturer=Amlogic
 
