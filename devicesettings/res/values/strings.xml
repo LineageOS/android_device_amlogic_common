@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Color space setting strings -->
+    <string name="color_space_settings_title">Color space</string>
+    <string name="select_hdmi_color">HDMI color space</string>
+    <string name="select_hdmi_color_summary">Some TV\'s don\'t work well with the default colorspace. If there are issues with the colors on your TV, try changing the colorspace here.</string>
+
+    <!-- Color spaces -->
+    <string name="hdmi_color_title_ycbcr444_12bit">YCbCr444 12bit</string>
+    <string name="hdmi_color_title_ycbcr444_10bit">YCbCr444 10bit</string>
+    <string name="hdmi_color_title_ycbcr444_8bit">YCbCr444 8bit</string>
+    <string name="hdmi_color_title_ycbcr422_12bit">YCbCr422 12bit</string>
+    <string name="hdmi_color_title_ycbcr420_12bit">YCbCr420 12bit</string>
+    <string name="hdmi_color_title_ycbcr420_10bit">YCbCr420 10bit</string>
+    <string name="hdmi_color_title_ycbcr420_8bit">YCbCr420 8bit</string>
+    <string name="hdmi_color_title_rgb_12bit">RGB 12bit</string>
+    <string name="hdmi_color_title_rgb_10bit">RGB 10bit</string>
+    <string name="hdmi_color_title_rgb_8bit">RGB 8bit</string>
+</resources>
