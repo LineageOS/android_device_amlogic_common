@@ -1,0 +1,29 @@
+//
+// SPDX-FileCopyrightText: 2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "DeviceSettings",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    platform_apis: true,
+    system_ext_specific: true,
+    certificate: "platform",
+    privileged: true,
+    static_libs: [
+        "org.lineageos.platform.internal",
+        "org.lineageos.settings.resources",
+        "SettingsLib",
+        "setupdesign",
+        "droidlogic.software.core-modified",
+    ],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
+
+java_import {
+  name: "droidlogic.software.core-modified",
+  jars: ["droidlogic.software.core.jar",],
+}
