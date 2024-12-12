@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string-array name="hdmi_color_modes">
+        <item>444,12bit</item>
+        <item>444,10bit</item>
+        <item>444,8bit</item>
+        <item>422,12bit</item>
+        <item>420,12bit</item>
+        <item>420,10bit</item>
+        <item>420,8bit</item>
+        <item>rgb,12bit</item>
+        <item>rgb,10bit</item>
+        <item>rgb,8bit</item>
+    </string-array>
+
+    <string-array name="hdmi_color_titles">
+        <item>@string/hdmi_color_title_ycbcr444_12bit</item>
+        <item>@string/hdmi_color_title_ycbcr444_10bit</item>
+        <item>@string/hdmi_color_title_ycbcr444_8bit</item>
+        <item>@string/hdmi_color_title_ycbcr422_12bit</item>
+        <item>@string/hdmi_color_title_ycbcr420_12bit</item>
+        <item>@string/hdmi_color_title_ycbcr420_10bit</item>
+        <item>@string/hdmi_color_title_ycbcr420_8bit</item>
+        <item>@string/hdmi_color_title_rgb_12bit</item>
+        <item>@string/hdmi_color_title_rgb_10bit</item>
+        <item>@string/hdmi_color_title_rgb_8bit</item>
+    </string-array>
+</resources>

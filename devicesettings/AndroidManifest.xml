@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.lineageos.settings.device"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:sharedUserId="android.uid.system">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/device_settings_app_name"
+        android:theme="@style/Theme.SubSettingsBase"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:persistent="true">
+
+        <provider
+            android:name=".DeviceSettingsSearchIndexablesProvider"
+            android:authorities="org.lineageos.settings.device"
+            android:multiprocess="false"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.READ_SEARCH_INDEXABLES"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
+            </intent-filter>
+        </provider>
+
+        <activity
+            android:name=".ColorSpaceSettingsActivity"
+            android:label="@string/color_space_settings_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.lineageos.settings.device.COLOR_SPACE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
