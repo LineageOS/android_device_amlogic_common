@@ -1,0 +1,17 @@
+java_library {
+    name: "droidlogic",
+
+    vendor: true,
+    sdk_version: "system_current",
+    installable: true,
+    srcs: [
+        "**/*.java",
+    ],
+
+    dxflags: ["--core-library"],
+
+    static_libs: [
+        "vendor.amlogic.hardware.systemcontrol-V1.0-java",
+        "vendor.amlogic.hardware.systemcontrol-V1.1-java",
+    ],
+}
