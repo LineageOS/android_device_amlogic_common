@@ -1,0 +1,17 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+prebuilt_hidl_interfaces {
+    name: "hidl_meson_display_ipc_interface",
+    interfaces: [
+        "vendor.amlogic.display.meson_display_ipc@1.0::IMesonDisplayIPC",
+    ],
+}
+prebuilt_hidl_interfaces {
+    name: "hidl_systemcontrol_interface",
+    interfaces: [
+        "vendor.amlogic.hardware.systemcontrol@1.0::ISystemControl",
+        "vendor.amlogic.hardware.systemcontrol@1.1::ISystemControl",
+    ],
+}
