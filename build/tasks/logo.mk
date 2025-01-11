@@ -1,10 +1,10 @@
 #
-# Copyright (C) 2022-2024 The LineageOS Project
+# Copyright (C) 2022-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include $(CLEAR_VARS)
+ifneq ($(filter gxl gxm g12a g12b sm1 s4 t7 sc2, $(TARGET_AMLOGIC_SOC)),)
 
 COMMON_LOGO_FILES := device/amlogic/common/logo
 
@@ -31,3 +31,5 @@ INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_LOGOIMAGE_TARGET)
 
 .PHONY: logoimage
 logoimage: $(INSTALLED_LOGOIMAGE_TARGET)
+
+endif
