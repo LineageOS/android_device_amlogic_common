@@ -185,8 +185,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     WifiOverlay \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant
 
 ifneq ($(TARGET_HAVE_WIFIHAL),false)
 PRODUCT_PACKAGES += \
