@@ -22,6 +22,30 @@
       },
       "revId": "42044a0e2f396db51bc8da0f62495161ed5e2f1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "395a1a79_b21538bb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-09T22:32:27Z",
+      "side": 1,
+      "message": "Yeah, caught that after - just have the rework up on Gerrit rn.",
+      "parentUuid": "58568aba_b8d9c7f3",
+      "range": {
+        "startLine": 7,
+        "startChar": 29,
+        "endLine": 7,
+        "endChar": 42
+      },
+      "revId": "42044a0e2f396db51bc8da0f62495161ed5e2f1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
