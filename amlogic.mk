@@ -121,13 +121,6 @@ endif
 PRODUCT_HOST_PACKAGES += \
     res_packer
 
-## Memtrack
-ifneq ($(TARGET_KERNEL_VERSION),5.4)
-PRODUCT_PACKAGES += \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service
-endif
-
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
