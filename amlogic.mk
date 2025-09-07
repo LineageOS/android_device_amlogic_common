@@ -113,9 +113,9 @@ endif
 
 ## Logo
 ifneq ($(PRODUCT_IS_ATV),true)
-LOGO_FILES := $(LOCAL_PATH)/logo/mobile
+LOGO_FILES ?= $(LOCAL_PATH)/logo/mobile
 else
-LOGO_FILES := $(LOCAL_PATH)/logo/tv
+LOGO_FILES ?= $(LOCAL_PATH)/logo/tv
 endif
 
 PRODUCT_HOST_PACKAGES += \
