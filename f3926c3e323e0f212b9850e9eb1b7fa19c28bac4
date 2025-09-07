@@ -52,6 +52,24 @@
       "parentUuid": "67c60728_1c7ce5f9",
       "revId": "f3926c3e323e0f212b9850e9eb1b7fa19c28bac4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81c8c4e7_9c7729b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-09-07T20:49:54Z",
+      "side": 1,
+      "message": "No inheritance logic takes place when using LOGO_FILES_OVERRIDE.",
+      "parentUuid": "f8b4fccb_e2d6560e",
+      "revId": "f3926c3e323e0f212b9850e9eb1b7fa19c28bac4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
