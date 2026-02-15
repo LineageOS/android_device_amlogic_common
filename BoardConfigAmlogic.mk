@@ -74,7 +74,14 @@ BOARD_CUSTOM_DTBOIMG_MK := device/amlogic/common/mkdtboimg.mk
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_NEEDS_DTBOIMAGE := true
 BOARD_KERNEL_BASE := 0x01078000
-BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1 otg_device=1
+BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1
+ifeq ($(strip $(TARGET_BOOTDEVICE)),usb)
+BOARD_KERNEL_CMDLINE += otg_device=0
+else ifeq ($(strip $(TARGET_USB_DEFAULT_MODE)),host)
+BOARD_KERNEL_CMDLINE += otg_device=0
+else
+BOARD_KERNEL_CMDLINE += otg_device=1
+endif
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
