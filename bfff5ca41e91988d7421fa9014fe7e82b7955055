@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "223ebc8e_f81e0401",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-15T07:05:08Z",
+      "side": 1,
+      "message": "I think this one is clear-cut/easy enough.\n\nThough, maybe worth a diff flag?",
+      "revId": "bfff5ca41e91988d7421fa9014fe7e82b7955055",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
