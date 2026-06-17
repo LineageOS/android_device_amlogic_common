@@ -15,3 +15,10 @@ prebuilt_hidl_interfaces {
         "vendor.amlogic.hardware.systemcontrol@1.1::ISystemControl",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_screencontrol_interface",
+    interfaces: [
+        "vendor.amlogic.hardware.screencontrol@1.0::IScreenControl",
+    ],
+}
