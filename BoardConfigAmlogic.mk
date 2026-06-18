@@ -76,7 +76,7 @@ endif
 
 ifeq ($(TARGET_KERNEL_VERSION),5.15)
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
-else
+else ifeq ($(TARGET_KERNEL_VERSION),5.4)
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 endif
 
