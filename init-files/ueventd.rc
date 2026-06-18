@@ -4,8 +4,8 @@
 # Amlogic AV streaming devices
 /dev/amvideo              0666   media        system
 /dev/ionvideo             0666   media        system
-/dev/video_composer.0     0660   media        system
-/dev/video_composer.1     0660   media        system
+/dev/video_composer*      0660   media        system
+/dev/di_process.*         0660   media        graphics
 /dev/ppmgr                0660   media        system
 /dev/amstream_*           0666   media        system
 /dev/audiodsp0            0660   media        system
@@ -25,34 +25,67 @@
 /dev/video19              0660   system       mediadrm
 /dev/video20              0660   system       mediadrm
 /dev/video21              0660   system       mediadrm
-/dev/video23              0660   system       mediadrm
-/dev/video26              0660   system       mediadrm
-/dev/video30              0660   system       mediadrm
-/dev/video31              0660   system       mediadrm
-/dev/video32              0660   system       mediadrm
-/dev/video33              0660   system       mediadrm
-/dev/video34              0660   system       mediadrm
-/dev/video35              0660   system       mediadrm
-/dev/video36              0660   system       mediadrm
-/dev/video37              0660   system       mediadrm
-/dev/video38              0660   system       mediadrm
-/dev/video50              0660   system       camera
+/dev/video23              0660   system     mediadrm
+/dev/video26              0660   system     mediadrm
+/dev/video30              0660   system     mediadrm
+/dev/video31              0660   system     mediadrm
+/dev/video32              0660   system     mediadrm
+/dev/video33              0660   system     mediadrm
+/dev/video34              0660   system     mediadrm
+/dev/video35              0660   system     mediadrm
+/dev/video36              0660   system     mediadrm
+/dev/video37              0660   system     mediadrm
+/dev/video38              0660   system     mediadrm
+/dev/video50              0660   system     camera
+/dev/video60              0660   system     camera
+/dev/video61              0660   system     camera
+/dev/video62              0660   system     camera
+/dev/video63              0660   system     camera
+/dev/video64              0660   system     camera
+/dev/video65              0660   system     camera
+/dev/video66              0660   system     camera
+/dev/video67              0660   system     camera
+/dev/video68              0660   system     camera
+/dev/video69              0660   system     camera
+/dev/video70              0660   system     camera
+/dev/video71              0660   system     camera
+/dev/video72              0660   system     camera
+/dev/video73              0660   system     camera
+/dev/video74              0660   system     camera
+/dev/video75              0660   system     camera
+/dev/video76              0660   system     camera
+/dev/video77              0660   system     camera
+/dev/v4l-subdev0          0660   system     camera
+/dev/v4l-subdev1          0660   system     camera
+/dev/v4l-subdev2          0660   system     camera
+/dev/v4l-subdev3          0660   system     camera
+/dev/v4l-subdev4          0660   system     camera
+/dev/v4l-subdev5          0660   system     camera
+/dev/v4l-subdev6          0660   system     camera
+/dev/v4l-subdev7          0660   system     camera
+/dev/v4l-subdev8          0660   system     camera
+/dev/v4l-subdev9          0660   system     camera
 /dev/amaudio_utils        0660   media        system
 /dev/amaudio_ctl          0660   media        system
 /dev/amvenc_avc           0660   mediacodec   system
 /dev/amvecm               0660   system       system
 /dev/HevcEnc              0660   mediacodec   system
+/dev/amvenc_multi         0660   mediacodec   system
+/dev/vc8000               0660   mediacodec   system
+/dev/memalloc             0660   mediacodec   system
 /dev/amsubtitle           0660   media        system
-/dev/jpegenc              0660   media        system
-/dev/videosync            0666   media        system
-/dev/media*               0666   media        system
-/dev/tsync                0666   media        system
-/dev/ac_sbuf0             0660   system       camera
-/dev/ac_isp4uf            0660   system       camera
-/dev/secmem               0660   system       mediadrm
-/dev/amresource_mgr       0666   media        system
+/dev/jpegenc              0660   cameraserver        system
+/dev/videosync            0666   media     system
+/dev/media*               0666   media     system
+/dev/tsync                0666   media     system
+/dev/ac_sbuf0             0660   system    camera
+/dev/ac_isp4uf            0660   system    camera
+/dev/secmem               0660   system     mediadrm
+/dev/amresource_mgr       0666   media     system
+/dev/adla0                0666   system       system
+/dev/amlgdc               0660   system     camera
 
-# Audio data
+#audio data
 /dev/audio_data_debug     0660   mediacodec   audio
 /dev/amjpegdec            0666   system       system
 /dev/ge2d                 0660   system       system
@@ -60,21 +93,38 @@
 /dev/vdin1                0660   system       system
 /dev/virtmem              0666   system       system
 /dev/ptsserver            0666   mediacodec   system
+/dev/hdmirx0              0660   system       system
+/dev/ptsserver            0666   system       mediadrm
+/dev/vicp                 0666   system       system
+
 
 # Mali
 /dev/ump                  0666   system       graphics
 /dev/mali                 0666   system       graphics
 /dev/mali0                0666   system       graphics
 /dev/ion                  0666   system       graphics
+/dev/dma_heap/heap-fb     0666   system       graphics
+/dev/dma_heap/heap-gfx    0666   system       graphics
+/dev/dma_heap/heap-secure 0666   system       graphics
+/dev/dma_heap/system      0666   system       graphics
+/dev/dma_heap/system-uncached      0666   system       graphics
+/dev/dma_heap/heap-codecmm      0666   system       graphics
+/dev/dma_heap/heap-cached-codecmm       0666   system       graphics
+/dev/dma_heap/heap-secure-codecmm       0666   system       graphics
 
 # uvm
 /dev/uvm                  0666   system       graphics
+/dev/dmaheap              0666   system       graphics
 
 # Video tunnel
 /dev/videotunnel          0666   system       graphics
 
 # sw_sync
 /dev/sw_sync              0666   system       graphics
+
+# usbci
+/dev/cimodule_command0    0666   system       system
+/dev/cimodule_media0      0666   system       system
 
 # Possible serial
 /dev/ttyS1                0660   bluetooth    bluetooth
@@ -92,7 +142,9 @@
 /dev/accelirq             0666   system       system
 /dev/timerirq             0666   system       system
 
+/dev/ree2aocpu            0666   system       bluetooth
 
+/dev/aml_btusb            0666   bluetooth    bluetooth
 /dev/rtk_btusb            0660   bluetooth    bluetooth
 # mtkbt
 /dev/stpbt                0664   bluetooth    bluetooth
@@ -104,25 +156,30 @@
 /dev/ttyBT1               0660   bluetooth     bluetooth
 
 /dev/display              0660   root         graphics
-/dev/display2             0660   root         graphics
 
 # For USB Joysticks
 /dev/input/js*            0664   system       system
 
 /dev/wifi_power           0660   wifi         bluetooth
+/dev/wifi_mac             0660   wifi         bluetooth
 
 /dev/otz_client           0666   drm          drm
 
 /dev/cec                  0666   system       system
 /dev/v4l2_frontend        0666   system       system
-/dev/opteearmtz00         0666   system       system
-/dev/teepriv0             0600   system       system
-/dev/tee0                 0666   system       system
+/dev/teepriv0	          0600   root         root
+/dev/tee0                 0666   system       drmrpc
 
 /dev/block/by-name/frp    0660   system       system
+/dev/block/by-name/env    0660   system       system
+
+# low power hotword
+/sys/class/meson_pm        suspend_mode    0664        system        audio
+/dev/dsp_dev                               0660        system        audio
+/dev/hifi4dsp0                             0660        root          audio
 
 # dma buf
-/dev/dma_heap/system-secure-*   0444    system system
+/dev/dma_heap/system-secure-*	0444	system system
 
 # /sys/ sysfs
 #
@@ -136,6 +193,8 @@
 /sys/devices/bt-dev.*/rfkill/rfkill0          type    0660    bluetooth   bluetooth
 /sys/devices/platform/mtty.0/rfkill/rfkill1    state   0660    bluetooth   bluetooth
 /sys/devices/platform/mtty.0/rfkill/rfkill1    type    0660    bluetooth   bluetooth
+/sys/devices/platform/soc/soc*aml_bt/rfkill/rfkill0    state   0660    bluetooth   bluetooth
+/sys/devices/platform/soc/soc*aml_bt/rfkill/rfkill0    type    0660    bluetooth   bluetooth
 
 # HDMI CEC
 /sys/class/amhdmitx/amhdmitx0       hpd_state               0664      system      system
@@ -169,13 +228,32 @@
 
 /sys/class/video                    device_resolution       0666      system      system
 
+# wake up key
+/sys/class/remote0/amremote0        wakeup_key_event        0664      system      system
+
 # CPU
 /sys/devices/system/cpu/cpu1        online                          0664      system      system
 /sys/devices/system/cpu/cpu0        cpufreq/scaling_governor        0664      system      system
 /sys/devices/system/cpu/cpu0        cpufreq/hmp_boost               0664      system      system
 
 # LED
-/sys/devices/platform/gpioleds/leds/yellow_led    trigger      0666  root root
+/sys/devices/platform/gpioleds/leds/yellow_led    trigger   0666  root root
 /sys/devices/platform/gpioleds/leds/sys_led       brightness   0666  root root
+/sys/class/leds/i2c_leds            single_colors   0666  system system
+
+
+#amaudio
+/sys/class/amaudio                  audio_channels_mask   0664         media        system
+/sys/class/amaudio                  enable_resample       0664         media        system
+/sys/class/amaudio                  resample_type         0664         media        system
+/sys/class/amaudio                  debug                 0664         system       mediadrm
+/sys/class/amaudio                  codec_report_info     0664         audioserver      mediadrm
+
+#audio dsp
+/sys/class/audiodsp                 codec_fatal_err       0664         media        system
+/sys/class/audiodsp                 digital_codec         0664         media        system
+/sys/class/audiodsp                 digital_raw           0664         system       system
+/sys/class/audiodsp                 ac3_drc_control       0664         system       system
+/sys/class/audiodsp                 dts_dec_control       0664         media       system
 
 parallel_restorecon enabled
