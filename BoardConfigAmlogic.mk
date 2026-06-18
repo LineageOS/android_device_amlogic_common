@@ -52,14 +52,18 @@ endif
 ## HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(PLATFORM_PATH)/vendor_framework_compatibility_matrix.xml
-ifeq ($(TARGET_KERNEL_VERSION),5.4)
+ifneq ($(filter 5.15 5.4, $(strip $(TARGET_KERNEL_VERSION))),)
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_5.4.xml
 else
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
 endif
 
 ifneq ($(BOARD_HAVE_BLUETOOTH),false)
+ifeq ($(TARGET_KERNEL_VERSION),5.15)
+DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_bt_5.15.xml
+else
 DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_bt.xml
+endif
 endif
 
 ifeq ($(PRODUCT_IS_ATV),true)
