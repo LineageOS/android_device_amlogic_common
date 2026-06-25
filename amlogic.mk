@@ -61,10 +61,6 @@ else ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
 PRODUCT_CHARACTERISTICS := tablet
 endif
 
-## Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 ## DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
