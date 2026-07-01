@@ -92,6 +92,9 @@ endif
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/init-files/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 ## Keymaster
 ifeq ($(TARGET_HAS_TEE),false)
 PRODUCT_PACKAGES += \
