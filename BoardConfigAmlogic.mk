@@ -136,6 +136,7 @@ TARGET_RECOVERY_DENSITY := 200dpi
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 
 ## SELinux
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/amlogic/sepolicy/sepolicy.mk
 
 ## Wi-Fi
