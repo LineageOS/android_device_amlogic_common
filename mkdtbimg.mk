@@ -9,10 +9,10 @@ DTBDIR := $(PRODUCT_OUT)/obj/KERNEL_OBJ/arch/arm64/boot/dts/amlogic
 DTCDIR := $(PRODUCT_OUT)/obj/KERNEL_OBJ/scripts/dtc/
 TARGET_FLASH_DTB_PARTITION ?= true
 INSTALLED_DTBIMAGE_PARTITION_TARGET := $(PRODUCT_OUT)/dtb.PARTITION
-ifeq ($(TARGET_KERNEL_VERSION),5.4)
-DTB_PARTITION_NAME := dt
-else
+ifneq ($(filter gxm glx g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
 DTB_PARTITION_NAME := dtb
+else
+DTB_PARTITION_NAME := dt
 endif
 
 define aml-compress-dtb
