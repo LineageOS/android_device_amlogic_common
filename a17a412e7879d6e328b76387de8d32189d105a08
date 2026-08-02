@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40d83104_04ceed9c",
+        "filename": "BoardConfigAmlogic.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-08-02T07:43:10Z",
+      "side": 1,
+      "message": "Unrelated?",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 40
+      },
+      "revId": "a17a412e7879d6e328b76387de8d32189d105a08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
