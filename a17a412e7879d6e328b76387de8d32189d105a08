@@ -46,6 +46,30 @@
       },
       "revId": "a17a412e7879d6e328b76387de8d32189d105a08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aad97205_6dbe8928",
+        "filename": "BoardConfigAmlogic.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-02T15:36:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a97f4019_a0eee6ed",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 79,
+        "endChar": 40
+      },
+      "revId": "a17a412e7879d6e328b76387de8d32189d105a08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
