@@ -1,5 +1,2 @@
-## fastbootd
-ro.fastbootd.available=true
-
 ## Logging
 log.tag=I
