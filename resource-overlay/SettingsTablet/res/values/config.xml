@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Whether battery from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_battery">false</bool>
+
+    <!-- Whether charging_sounds should be shown or not. -->
+    <bool name="config_show_charging_sounds">false</bool>
+
+    <!-- Whether top_level_battery should be shown or not. -->
+    <bool name="config_show_top_level_battery">false</bool>
+</resources>
