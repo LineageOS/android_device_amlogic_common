@@ -22,6 +22,30 @@
       },
       "revId": "f24e3972025499b8df8406f603dc8aca6569372c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b7c3aa1_c8faca2d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-03T17:25:20Z",
+      "side": 1,
+      "message": "moved properties to systme_ext in prior commit now. so, accurate.",
+      "parentUuid": "8a88b609_bfb05cf4",
+      "range": {
+        "startLine": 7,
+        "startChar": 32,
+        "endLine": 7,
+        "endChar": 42
+      },
+      "revId": "f24e3972025499b8df8406f603dc8aca6569372c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
