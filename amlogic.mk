@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     config.disable_bluetooth=true
 else
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default
 
 PRODUCT_PROPERTY_OVERRIDES += \
