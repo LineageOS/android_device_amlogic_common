@@ -35,9 +35,6 @@ ro.lmk.use_new_strategy=true
 ro.media.maxmem=629145600
 ro.vendor.platform.support.dolby=true
 
-## NRDP
-ro.vendor.nrdp.validation=ninja_7
-
 ## Platform
 ro.vendor.platform.is.tv=0
 vendor.sys.pq.supports=false
