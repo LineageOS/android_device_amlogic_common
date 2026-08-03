@@ -134,8 +134,12 @@ ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 include vendor/lineage/config/BoardConfigReservedSize.mk
 endif
 
-$(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
+$(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
+    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+
+$(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 ## Platform
