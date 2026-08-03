@@ -114,13 +114,16 @@ PRODUCT_HOST_PACKAGES += \
     res_packer
 
 ## Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    FrameworksOverlayAmlogic \
+    LineageSDKOverlayAmlogic
 
 ifneq ($(PRODUCT_IS_ATV),true)
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-tab
+PRODUCT_PACKAGES += \
+    FrameworksOverlayAmlogicTablet \
+    LineageSDKOverlayAmlogicTablet \
+    SettingsOverlayAmlogicTablet \
+    SystemUIOverlayAmlogicTablet
 endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
