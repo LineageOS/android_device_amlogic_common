@@ -63,7 +63,6 @@ BOARD_CUSTOM_DTBOIMG_MK := device/amlogic/common/mkdtboimg.mk
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_NEEDS_DTBOIMAGE := true
 
-ifneq ($(strip $(TARGET_KERNEL_VERSION)),5.15)
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1
 ifeq ($(strip $(TARGET_BOOTDEVICE)),usb)
 BOARD_KERNEL_CMDLINE += otg_device=0
@@ -72,29 +71,15 @@ BOARD_KERNEL_CMDLINE += otg_device=0
 else
 BOARD_KERNEL_CMDLINE += otg_device=1
 endif
-endif
-
-ifeq ($(TARGET_KERNEL_VERSION),5.15)
-BOARD_KERNEL_IMAGE_NAME := Image.lz4
-else ifeq ($(TARGET_KERNEL_VERSION),5.4)
-BOARD_KERNEL_IMAGE_NAME := Image.gz
-endif
 
 BOARD_KERNEL_BASE        := 0x0
+BOARD_KERNEL_IMAGE_NAME  := Image.lz4
 BOARD_KERNEL_OFFSET      := 0x2080000
 BOARD_PAGE_SIZE          := 4096
 TARGET_BOOTLOADER_IS_2ND := false
 
-ifeq ($(TARGET_KERNEL_VERSION),5.15)
 BOARD_BOOT_HEADER_VERSION  := 4
 BOARD_MKBOOTIMG_ARGS       := --kernel_offset $(BOARD_KERNEL_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
-else ifeq ($(TARGET_KERNEL_VERSION),5.4)
-BOARD_BOOT_HEADER_VERSION  := 3
-BOARD_RAMDISK_OFFSET       := 0x01000000
-BOARD_TAGS_OFFSET          := 0x00000100
-BOARD_DTB_OFFSET           := 0x01f00000
-BOARD_MKBOOTIMG_ARGS       := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET) --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
-endif
 
 ## Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
