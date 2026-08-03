@@ -65,10 +65,6 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
-## fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 ## Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
