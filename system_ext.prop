@@ -3,5 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+## fastbootd
+ro.fastbootd.available=true
+
 ## Logging
 log.tag=I
