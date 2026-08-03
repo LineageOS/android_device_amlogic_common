@@ -9,9 +9,6 @@ dalvik.vm.heaptargetutilization=0.75
 ## DRM
 drm.service.enabled=1
 
-## fastbootd
-ro.fastbootd.available=true
-
 ## Graphics
 persist.sys.hdmi.keep_awake=false
 persist.vendor.sys.hdmionly=true
