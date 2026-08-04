@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "081b3e9d_1b597d14",
+        "filename": "mkdtbimg.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-08-04T05:17:17Z",
+      "side": 1,
+      "message": "gxl or glx?",
+      "range": {
+        "startLine": 12,
+        "startChar": 20,
+        "endLine": 12,
+        "endChar": 24
+      },
+      "revId": "c573f62e8c2ef1a8df320ced0ad732c9a63e09ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
