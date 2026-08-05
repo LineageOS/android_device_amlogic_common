@@ -89,6 +89,8 @@ endif
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
 ifneq ($(filter gxm gxl g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
+BOARD_KERNEL_IMAGE_NAME   := Image.gz
+BOARD_RAMDISK_USE_XZ      := true
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_DTB_OFFSET          := 0x00e88000
 BOARD_KERNEL_BASE         := 0x01078000
@@ -138,8 +140,14 @@ $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
+ifneq ($(filter gxm gxl g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
+TREBLE_PARTITIONS_FS_TYPE := ext4
+else
+TREBLE_PARTITIONS_FS_TYPE := erofs
+endif
+
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := $(TREBLE_PARTITIONS_FS_TYPE)) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 ## Platform
