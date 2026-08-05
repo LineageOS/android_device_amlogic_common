@@ -74,9 +74,6 @@ else
 BOARD_KERNEL_CMDLINE += otg_device=1
 endif
 
-
-BOARD_KERNEL_IMAGE_NAME := Image.lz4
-
 ifneq ($(filter gxm gxl g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_DTB_OFFSET          := 0x00e88000
@@ -86,6 +83,8 @@ BOARD_KERNEL_PAGESIZE     := 2048
 BOARD_RAMDISK_OFFSET      := 0xfef10000
 BOARD_SECOND_OFFSET       := 0xfee10000
 BOARD_TAGS_OFFSET         := 0xfdf10100
+BOARD_KERNEL_IMAGE_NAME   := Image.gz
+BOARD_RAMDISK_USE_XZ      := true
 BOARD_MKBOOTIMG_ARGS      := --kernel_offset $(BOARD_KERNEL_OFFSET) --second_offset $(BOARD_SECOND_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET) --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_BOOTLOADER_IS_2ND  := true
 else
@@ -93,6 +92,7 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE         := 0x0
 BOARD_KERNEL_OFFSET       := 0x2080000
 BOARD_KERNEL_PAGESIZE     := 4096
+BOARD_KERNEL_IMAGE_NAME   := Image.lz4
 BOARD_MKBOOTIMG_ARGS      := --kernel_offset $(BOARD_KERNEL_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 endif
 
@@ -127,8 +127,14 @@ $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
+ifneq ($(filter gxm gxl g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
+TREBLE_PARTITIONS_FS_TYPE := ext4
+else
+TREBLE_PARTITIONS_FS_TYPE := erofs
+endif
+
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := $(TREBLE_PARTITIONS_FS_TYPE)) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 ## Platform
