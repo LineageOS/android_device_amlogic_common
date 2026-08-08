@@ -62,16 +62,6 @@ endif
 ## HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(PLATFORM_PATH)/vendor_framework_compatibility_matrix.xml
-ifeq ($(TARGET_KERNEL_VERSION),5.4)
-DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_5.4.xml
-else
-DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest.xml
-endif
-
-ifeq ($(PRODUCT_IS_ATV),true)
-DEVICE_MANIFEST_FILE += $(PLATFORM_PATH)/manifest_tv.xml
-endif
-
 DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
 ## Kernel
