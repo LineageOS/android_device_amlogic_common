@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc679f11_eb4ca20d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-08-18T10:01:05Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "98a0f0bc_283d13f0",
+      "revId": "23f45c1069fa9a5a40aa82a3704aa2079abfe888",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "51e04d02_3bd17ffa",
@@ -49,6 +67,24 @@
       "side": 1,
       "message": "Why not just use this and keep it here:\nBOARD_KERNEL_IMAGE_NAME ?\u003d Image.lz4",
       "parentUuid": "51e04d02_3bd17ffa",
+      "revId": "23f45c1069fa9a5a40aa82a3704aa2079abfe888",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "635eda81_ba811ad4",
+        "filename": "BoardConfigAmlogic.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2026-08-18T10:01:05Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "54099b5b_156b0c97",
       "revId": "23f45c1069fa9a5a40aa82a3704aa2079abfe888",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
