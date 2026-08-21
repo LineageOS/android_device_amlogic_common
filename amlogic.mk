@@ -171,16 +171,12 @@ DEVICE_MATRIX_FILE := $(LOCAL_PATH)/compatibility_matrix.xml
 ## Wi-Fi
 ifneq ($(BOARD_HAVE_WIFI),false)
 PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
     hostapd \
     libwpa_client \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
-
-ifneq ($(TARGET_HAVE_WIFIHAL),false)
-PRODUCT_PACKAGES += \
-    android.hardware.wifi-service
-endif
 
 PRODUCT_COPY_FILES +=  \
     device/amlogic/common/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
