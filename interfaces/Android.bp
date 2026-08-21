@@ -24,3 +24,11 @@ prebuilt_hidl_interfaces {
         "vendor.amlogic.hardware.systemcontrol@1.1::ISystemControl",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_refprovision_interface",
+    interfaces: [
+        "vendor.ref.hardware.RefProvision@1.0::IRefProvision",
+        "vendor.ref.hardware.RefProvision@1.1::IRefProvision",
+    ],
+}
