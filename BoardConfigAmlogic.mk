@@ -59,11 +59,6 @@ else
 TARGET_SCREEN_DENSITY ?= 240
 endif
 
-## HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(PLATFORM_PATH)/vendor_framework_compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
-
 ## Kernel
 BOARD_CUSTOM_DTBIMG_MK := device/amlogic/common/mkdtbimg.mk
 BOARD_CUSTOM_DTBOIMG_MK := device/amlogic/common/mkdtboimg.mk
