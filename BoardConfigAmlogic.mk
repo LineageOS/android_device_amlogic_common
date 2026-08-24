@@ -115,10 +115,6 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-ifneq ($(PRODUCT_IS_ATV),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 370179008
-endif
-
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 include vendor/lineage/config/BoardConfigReservedSize.mk
 endif
