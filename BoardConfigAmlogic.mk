@@ -96,6 +96,8 @@ BOARD_KERNEL_IMAGE_NAME   := Image.lz4
 BOARD_MKBOOTIMG_ARGS      := --kernel_offset $(BOARD_KERNEL_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 endif
 
+TARGET_KERNEL_VERSION ?= 5.15
+
 ## Partitions
 ifneq ($(filter gxm gxl g12a g12b sm1,$(TARGET_AMLOGIC_SOC)),)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
