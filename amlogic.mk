@@ -84,9 +84,9 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
 endif
 
-## Init-Files
-PRODUCT_COPY_FILES +=  \
-    $(LOCAL_PATH)/init-files/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+## Init
+PRODUCT_PACKAGES += \
+    ueventd.amlogic.rc
 
 # ION
 $(call soong_config_set_bool,libion,legacy_impl,true)
