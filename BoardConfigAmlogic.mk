@@ -63,7 +63,6 @@ endif
 BOARD_CUSTOM_DTBIMG_MK := device/amlogic/common/mkdtbimg.mk
 BOARD_CUSTOM_DTBOIMG_MK := device/amlogic/common/mkdtboimg.mk
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_NEEDS_DTBOIMAGE := true
 
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1
 ifeq ($(strip $(TARGET_BOOTDEVICE)),usb)
