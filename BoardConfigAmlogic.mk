@@ -61,7 +61,6 @@ endif
 
 ## Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_NEEDS_DTBOIMAGE := true
 
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=0 hdr_policy=1
 ifeq ($(strip $(TARGET_BOOTDEVICE)),usb)
