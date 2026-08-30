@@ -77,11 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
-## Hardware Composer
-PRODUCT_PACKAGES += \
-    libhwc2on1adapter \
-    libhwc2onfbadapter
-
 ## Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.batteryless
