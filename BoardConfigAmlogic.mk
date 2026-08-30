@@ -61,7 +61,6 @@ endif
 
 ## Kernel
 BOARD_CUSTOM_DTBIMG_MK := device/amlogic/common/mkdtbimg.mk
-BOARD_CUSTOM_DTBOIMG_MK := device/amlogic/common/mkdtboimg.mk
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_NEEDS_DTBOIMAGE := true
 
