@@ -214,6 +214,7 @@
 # HDMI CEC
 /sys/class/amhdmitx/amhdmitx0       hpd_state               0664      system      system
 /sys/class/amhdmitx/amhdmitx0       disp_mode               0664      system      system
+/sys/class/amhdmitx/amhdmitx0       attr                    0664      system      system
 /sys/class/amhdmitx/amhdmitx0       config                  0664      system      system
 /sys/class/amhdmitx/amhdmitx0       avmute                  0664      system      system
 /sys/class/amhdmitx/amhdmitx0       aud_ch                  0664      system      mediadrm
