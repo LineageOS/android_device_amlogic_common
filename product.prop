@@ -8,5 +8,8 @@ ro.boot.btmacaddr=22:22:ce:d2:ca:13
 ro.hdmi.cec.source.playback_device_action_on_routing_control=wake_up_and_send_active_source
 ro.sys.hdmiin.enable=true
 
-## LMK
+## LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
 ro.lmk.use_new_strategy=true
